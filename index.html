@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chapter 45: Events: link</h1>
+    <!-- Why Events  -->
+     <!-- A good website is a resposive website. The user does 
+     something-clicks a button,
+     moves the mouse, presses a key-and something happens. Javascript
+     gives you many ways to
+     respond to the user's needs.
+
+     Real world Examples:
+     1. The user clicks a button saying "Our Gurantee" and an alert displays spelling out
+     the Gurantee.
+
+     2.A page displays a "before" picture of model. when the user mouses over the 
+     picture , it is replaced by an "after" picture of her.
+
+     3. The user types a number in the MILES field  on a form . when she clicks in the 
+     KILOMETERS field, the equivalent in KILOMETERS displays.
+
+     4. The user has entered her email address in a form, and is about to type a comment.
+     when she moves the cursor from the email field to the comment field, Javascript checks
+     to see if the email address is valid. In this case, it isn't-she's omitted ".com" at
+     the end of the address . A message displays letting her know that she's entered an 
+     invalid email address.
+
+     5.On an online shopping site, there's a picture of a black watch. next to it is a 
+     drop-down list asking the user to choose a color . when she choose , the color of the
+     watch in the picture changes to that color . -->
+
+     <!-- What are Events  -->
+      <!-- All of these user actions-clicking a button , moving the mouse , moving from one  
+      field to another in a form , selecting a different option-are known as events. -->
+
+      <!-- links we've used so far in html 
+      <a href="www.google.com">Google</a><br>
+      <a href="www.w3school.com">W3 school</a> -->
+
+      <!-- inline event handling
+      inline event-handling means that you combine bits of Javascript with HTML markuup.
+
+      Note: we won't be using inline event-handling . we'll be using scripting approach
+      that is we'll write Javascript in a seperate file same as we did for css.
+      <a href="#" onClick="alert('hi')">Click</a>
+      <a href="#" onClick="alert('hi')">say hi</a>
+      <a href="#" onClick="console.log('hi')">say Hi</a> -->
+
+      <!-- Warning  -->
+       <!-- But there's a problem with the markup above . <a href="#" tells the browser to
+       reload the page. This means that if the user has scrolled down to the link , the click,
+       in addition to running the javascript code, will scroll the page back to the top-an
+       action you don't normally want. I've included this flawed approach, using <a href="#" ,
+       because you'll run into here and there in other people's work , but you'll probably
+       prefer this approach:
+
+       Do this Instead -->
+       <!-- <a href="JavaScript:void(0)" onClick="alert('hi');">click</a> -->
+
+       <!-- call a function from script on link click  -->
+        <!-- <a href="JavaScript:void(0)" onclick="greeting()">click</a>
+        <script>
+            function greeting() {
+                alert("hello");
+            }
+        </script> -->
+
+
+
+</body>
+</html>
